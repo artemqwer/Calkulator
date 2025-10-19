@@ -38,8 +38,13 @@ function calculate() {
             result = num1 * num2;
             break;  
         case '/':
-          result = num2 !== 0 ? num1 / num2 : 'Помилка: Ділення на нуль';
-            break;
+          if (num2 === 0) {
+            alert("Ділити на нуль не можна!");
+            clearDisplay();
+            return;
+        }
+        result = num1 / num2;
+        break;
         default:
             return;
     }
@@ -63,3 +68,4 @@ function updateDisplay() {
     display.value = currentInput;
 
 }
+
