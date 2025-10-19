@@ -38,11 +38,8 @@ function calculate() {
             result = num1 * num2;
             break;  
         case '/':
-            if (num2 === 0) {
-                console.log('Помилка: Ділення на нуль');
-                clearDisplay();
-                return;
-            } 
+          result = num2 !== 0 ? num1 / num2 : 'Помилка: Ділення на нуль';
+            break;
         default:
             return;
     }
@@ -64,4 +61,5 @@ function clearDisplay() {
 function updateDisplay() {
     const display = document.getElementById('display');
     display.value = currentInput;
+
 }
