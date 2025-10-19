@@ -50,6 +50,7 @@ button:hover {
 button:active {
     background: #00ffcc;
     color: #000;
+    cursor: pointer;
 }
 
 button:nth-child(13), /* кнопка "+" */
@@ -61,10 +62,13 @@ button:nth-child(17)  /* кнопка "=" */
     background: #00ffcc;
     color: #000;
     font-weight: bold;
+    cursor: pointer;
 }
 
 button:nth-child(18) { /* кнопка "C" */
     background: #ff5555;
     color: #fff;
     font-weight: bold;
+    cursor: pointer;
 }
+
